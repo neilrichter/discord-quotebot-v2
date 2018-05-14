@@ -1,1 +1,4 @@
-module.exports.token = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"; //your token goes here
+module.exports = {
+    token: 'XXXXXXXXXXXXXXX', // Your token here
+    prefix: '!quote'
+};

@@ -4,6 +4,12 @@ const client = new Discord.Client({
 });
 const config = require("./config.js");
 
+client.on('message', message => {
+    if (message.content.split(' ')[0] == config.prefix) {
+        console.log("AH, That's for me !");
+    }
+});
+
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.username}`);
 });
