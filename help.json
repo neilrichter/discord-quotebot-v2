@@ -1,0 +1,23 @@
+{
+    "fr": {
+        "title": "Utilisation du Quotebot",
+        "requires": "Pour vous servir du bot, activez tout d'abord le mode développeur dans les paramètres :\n*Paramètres utilisateurs > Apparence > Activer le mode développeur*\n\nLe prefixe est : `!quote`\n\nAvant de citer un message, copier d'abord l'identifiant du message à citer en faisant Clic droit + copier l'ID",
+        "message": "",
+        "quote": {
+            "usage": "Utilisation:",
+            "desc": "Pour le citer, la syntaxe de la commande est la suivante : `!quote ID`"
+        },
+        "example": "```\n!quote 445661163162959902",
+        "options": {
+            "desc": "Certaines options sont disponibles, comme changer la couleur de la barre latérale. Les options possèdent la syntaxe suivante :```\n!quote <ID> -option valeur```",
+            "example": "Exemple: ```\n!quote 445661163162959902 -color #52ABCC```",
+            "list": {
+                "color": "Celle ci doit avoir le format de [couleur héxadécimale](http://www.color-hex.com/) : ```\n!quote 445661163162959902 -color #FFFF00``` Le `#` peut être ommis."
+            }
+        },
+        "warning": {
+            "title": "Attention",
+            "desc": "*Il n'est pas encore possible de citer des messages d'autres serveurs, ni n'autres salons textuels, mais ce sera disponible plus tard.*"
+        }
+    }
+}
