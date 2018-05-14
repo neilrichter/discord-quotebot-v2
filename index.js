@@ -41,9 +41,9 @@ client.on('message', message => {
             message.delete();
             let data = new Discord.RichEmbed();
             data.setColor(Color(options.color).color);
-            data.setAuthor(`${quotedMessage.author.username} said :`, quotedMessage.author.avatarURL);
+            data.setAuthor(`${quotedMessage.author.username} ${defaults.message[options.lang].said} :`, quotedMessage.author.avatarURL);
             data.setDescription(quotedMessage.content);
-            data.setFooter('In this channel');
+            data.setFooter(`${message.author.tag} ${defaults.message[options.lang].here}`);
             data.setTimestamp(typeof quotedMessage.editedTimestamp != 'undefined' ? quotedMessage.editedTimestamp : quotedMessage.createdTimestamp);
             message.channel.send(data);
         })

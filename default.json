@@ -1,4 +1,14 @@
 {
     "color": "#913D88",
-    "lang": "fr"
+    "lang": "fr",
+    "message": {
+        "fr": {
+            "said": "a dit",
+            "here": "a cité depuis ce salon"
+        },
+        "en": {
+            "said": "said",
+            "here": "quoted from this channel"
+        }
+    }
 }
