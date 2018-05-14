@@ -31,7 +31,47 @@ const removeParams = message => {
     }
 }
 
+/**
+ * Corrects the color value in function of its form if the # is 
+ * missing. If the value does not respect the Hexadecimal color 
+ * value standards, color value is set back to defaults.
+ * @param {string} color Color passed as a parameter in the message
+ * @param {Object} defaults Object representing the default value for each option
+ * @returns {string} Sanitized color value
+ */
+const sanitizeColor = (color, defaults) => {
+    if (color.substr(0, 1) !== '#' && color.length !== 7) {
+        if (color.length === 6) {
+            return `#${color}`;
+        } else {
+            return defaults.color;
+        }
+    } else if (color.substr(0, 1) === '#' && color.length !== 7 ) {
+        return defaults.color;
+    } else {
+        return color;
+    }
+}
+
+/**
+ * Extends defaults options with options passed in the parse message.
+ * Also sanitizes the color value.
+ * @param {Object} options Options passed as parameters in the message
+ * @param {Object} defaults Object representing the default value for each option
+ * @returns {Object} Extended options object
+ */
+const extendParams = (options, defaults) => {
+    for (let i in defaults) {
+        if (!options.hasOwnProperty(i)) {
+            options[i] = defaults[i];
+        }
+    }
+    options.color = sanitizeColor(options.color, defaults);
+    return options;
+}
+
 module.exports = {
     parseParams: parseParams,
     removeParams: removeParams,
+    extendParams: extendParams
 }

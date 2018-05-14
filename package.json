@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/neilrichter/discord-quotebot-v2#readme",
   "dependencies": {
+    "color": "^3.0.0",
     "discord.js": "^11.3.2"
   }
 }
