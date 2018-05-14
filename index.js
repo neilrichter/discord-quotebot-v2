@@ -1,17 +1,17 @@
-const Discord = require("discord.js");
+const Discord = require('discord.js');
 const client = new Discord.Client({
-  autoReconnect: true
+    autoreconnect: true
 });
-const config = require("./config.js");
+const config = require('./config.js');
 
 client.on('message', message => {
-    if (message.content.split(' ')[0] == config.prefix) {
-        console.log("AH, That's for me !");
+    if (message.content.split(' ')[0] != config.prefix) {
+        return;
     }
 });
 
-client.on("ready", () => {
-  console.log(`Logged in as ${client.user.username}`);
-});
+client.on ('ready', () => {
+    console.log(`Logged in as ${client.user.username}`);
+})
 
 client.login(config.token);
