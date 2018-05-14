@@ -25,6 +25,7 @@ client.on('message', message => {
         data.setTitle(help.title);
         data.setDescription(help.requires);
         data.addField(help.quote.usage, help.quote.desc, false);
+        data.addField(help.example.title, help.example.content, false);
         data.addBlankField(false);
         data.addField("Options :", `${help.options.desc}\n${help.options.example}`, false);
         for (var i in help.options.list) {
