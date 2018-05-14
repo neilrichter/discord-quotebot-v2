@@ -6,15 +6,16 @@
             "usage": "Utilisation:",
             "desc": "Pour le citer, la syntaxe de la commande est la suivante : ```\n!quote ID```"
         },
-        "example": "```\n!quote 445661163162959902",
+        "example": {
+            "title": "Exemple :",
+            "content": "```\n!quote 445661163162959902```"
+        },
         "options": {
             "desc": "Certaines options sont disponibles, comme changer la couleur de la barre latérale. Les options possèdent la syntaxe suivante :```\n!quote <ID> -option valeur```",
-            "example": {
-                "title": "Exemple :",
-                "content": "```\n!quote 445661163162959902 -color #52ABCC```"
-            },
+            "example": "Exemple :```\n!quote 445661163162959902 -color #52ABCC```",
             "list": {
-                "color": "Celle ci doit avoir le format de [couleur héxadécimale](http://www.color-hex.com/) : ```\n!quote 445661163162959902 -color #FFFF00``` Le `#` peut être ommis."
+                "color": "Celle ci doit avoir le format de [couleur héxadécimale](http://www.color-hex.com/) : ```\n!quote 445661163162959902 -color #FFFF00``` Le `#` peut être ommis.",
+                "lang": "Permet de choisir la langue de la sortie. Pour l'instant l'anglais (en) et le français (fr) sont disponibles. ```\n!quote help -lang en```"
             }
         },
         "warning": {
@@ -30,14 +31,15 @@
             "desc": "To quote a message, the command syntax is the following : ```\n!quote ID```"
         },
         "example": {
-                "title": "Example :",
-                "content": "```\n!quote 445661163162959902 -color #52ABCC```"
-            },
+            "title": "Example :",
+            "content": "```\n!quote 445661163162959902```"
+        },
         "options": {
             "desc": "Some options are available, such as changing the sidebar color. To set an option, use the following syntax :```\n!quote <ID> -option value```",
             "example": "Example: ```\n!quote 445661163162959902 -color #52ABCC```",
             "list": {
-                "color": "The color needs to be in [Hexadecimal value](http://www.color-hex.com/) : ```\n!quote 445661163162959902 -color #FFFF00``` The `#` can be ommited."
+                "color": "The color needs to be in [Hexadecimal value](http://www.color-hex.com/) : ```\n!quote 445661163162959902 -color #FFFF00``` The `#` can be ommited.",
+                "lang": "Defines output language. For the moment, english (en) and french (fr) are available.```\n!quote help -lang fr```"
             }
         },
         "warning": {

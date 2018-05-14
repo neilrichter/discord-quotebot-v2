@@ -28,3 +28,12 @@ Example :
 !quote 445610958404976640 -color #52ABCC
 !quote 445610958404976640 -color 52AbCc # are equal
 ```
+
+### lang
+
+Lang defines the output language. For the moment, english (en) and french (fr) are available. 
+
+Example :
+```
+!quote help -lang fr
+```
