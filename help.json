@@ -2,10 +2,9 @@
     "fr": {
         "title": "Utilisation du Quotebot",
         "requires": "Pour vous servir du bot, activez tout d'abord le mode développeur dans les paramètres :\n*Paramètres utilisateurs > Apparence > Activer le mode développeur*\n\nLe prefixe est : `!quote`\n\nAvant de citer un message, copier d'abord l'identifiant du message à citer en faisant Clic droit + copier l'ID",
-        "message": "",
         "quote": {
             "usage": "Utilisation:",
-            "desc": "Pour le citer, la syntaxe de la commande est la suivante : `!quote ID`"
+            "desc": "Pour le citer, la syntaxe de la commande est la suivante : ```\n!quote ID```"
         },
         "example": "```\n!quote 445661163162959902",
         "options": {
@@ -18,6 +17,26 @@
         "warning": {
             "title": "Attention",
             "desc": "*Il n'est pas encore possible de citer des messages d'autres serveurs, ni n'autres salons textuels, mais ce sera disponible plus tard.*"
+        }
+    },
+    "en": {
+        "title": "Quotebot usage",
+        "requires": "To use the bot, first activate the Developer mode in settings :\n*User settings > Appearence > Enable Developer Mode*\n\nThe prefix is : `!quote`\n\nBefore quoting a message, make sure you first copy the message ID by right clicking on the message, and pressing \"Copy ID\"",
+        "quote": {
+            "usage": "Usage:",
+            "desc": "To quote a message, the command syntax is the following : ```\n!quote ID```"
+        },
+        "example": "```\n!quote 445661163162959902",
+        "options": {
+            "desc": "Some options are available, such as changing the sidebar color. To set an option, use the following syntax :```\n!quote <ID> -option value```",
+            "example": "Example: ```\n!quote 445661163162959902 -color #52ABCC```",
+            "list": {
+                "color": "The color needs to be in [Hexadecimal value](http://www.color-hex.com/) : ```\n!quote 445661163162959902 -color #FFFF00``` The `#` can be ommited."
+            }
+        },
+        "warning": {
+            "title": "Warning",
+            "desc": "*It is not possible for the moment to quote a message from another server or another channel, but it will be available later.*"
         }
     }
 }
