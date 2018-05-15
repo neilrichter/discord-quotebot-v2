@@ -54,6 +54,22 @@ const sanitizeColor = (color, defaults) => {
 }
 
 /**
+ * Verifies that language is valid. If not, sets language to 
+ * defaults.
+ * @param {String} lang Lnaguage entered by the user
+ * @param {Object} defaults Object representing the default value for each option
+ * @returns {String} Language that will be applied
+ */
+const sanitizeLang = (lang, defaults) => {
+    let help = require('./help.json');
+    if (typeof help[lang] == 'undefined') {
+        return defaults.lang;
+    } else {
+        return lang;
+    }
+}
+
+/**
  * Extends defaults options with options passed in the parse message.
  * Also sanitizes the color value.
  * @param {Object} options Options passed as parameters in the message
@@ -67,6 +83,7 @@ const extendParams = (options, defaults) => {
         }
     }
     options.color = sanitizeColor(options.color, defaults);
+    options.lang = sanitizeLang(options.lang, defaults);
     return options;
 }
 
